@@ -1,0 +1,876 @@
+body {
+    margin: 0;
+    padding: 0;
+ /*This is on the google pixel 5 
+ viewport and doesn't work if you
+  shrink the screen only when you 
+  put on mobile display (383 x 851)*/
+
+/*also I did this all with the inspect element open and 
+once i closed it when i finished my assignment it showed 
+different results please keep that in mind. 
+( i didn't have enough time to fix my blunder sorry)*/
+
+
+
+}
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    background-color: #0a0a0a;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/*--the top right nav button -*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.navbar:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+body { background-image:url('myImage.webp'); background-repeat:repeat; }
+
+.title{
+    color: white;
+    padding: 10%;
+    padding-top: 16%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+     text-align:center;
+     font-size: 1.25em;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.title2{
+    color: white;
+
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+     text-align:center;
+    font-size: 2.25em;  
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.title3{
+    color: white;
+    padding-top: 8%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align:center;
+    font-size: 2.25em; 
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+/*--my first grid holding the contents of page one on a mobile view-*/
+.container{
+
+    display: grid;
+    grid-template-columns:5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    grid-gap: 1vh;
+    
+}
+
+.texts1{
+    grid-row-start: 4 ;
+    grid-row-end: 4 ;
+    grid-column-start: 2 ;
+    grid-column-end: 2 ;
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 30%;
+    font-size: 0.75em;
+    text-align: center;
+    width: 12vh;
+
+}
+
+.texts2{
+    grid-row-start: 4 ;
+    grid-row-end: 4 ;
+    grid-column-start: 5 ;
+    grid-column-end: 5 ;
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 30%;
+    font-size: 0.75em;
+    text-align: center;
+    margin-left: 50%;
+    width: 15vh;
+}
+
+.texts3{
+    grid-row-start: 6 ;
+    grid-row-end: 6 ;
+    grid-column-start: 2 ;
+    grid-column-end: 2 ;
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 35%;
+    font-size: 0.75em;
+    text-align: center;
+    width: 15vh;
+    margin-right: 100%;
+    
+}
+
+.texts4{
+
+    grid-row-start: 6 ;
+    grid-row-end: 6 ;
+    grid-column-start: 5 ;
+    grid-column-end: 5 ;
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 30%;
+    font-size: 0.75em;
+    text-align: center;
+    padding-left: 50%;
+    width: 15vh;
+}
+
+.texts5{
+
+    grid-row-start: 8 ;
+    grid-row-end: 8 ;
+    grid-column-start: 2 ;
+    grid-column-end: 2 ;
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 30%;
+    font-size: 0.75em;
+    text-align: center;
+    padding-right: 20%;
+    width: 15vh;
+}
+
+.texts6{
+
+    grid-row-start: 8 ;
+    grid-row-end: 8 ;
+    grid-column-start: 5 ;
+    grid-column-end: 5 ;
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 30%;
+    font-size: 0.75em;
+    text-align: center;
+    width: 15vh;
+    padding-left: 40%;
+}
+
+.pic1{
+    grid-row-start: 3 ;
+    grid-row-end: 3 ;
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    padding-left: 10%;
+    border-radius: 25%;
+
+}
+
+.pic2{
+    grid-row-start: 3 ;
+    grid-row-end: 3 ;
+    grid-column-start: 5 ;
+    grid-column-end: 8 ;
+    border-radius: 25%;
+
+}
+
+.pic3{
+    grid-row-start: 5 ;
+    grid-row-end: 5 ;
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    padding-left: 10%;
+    border-radius: 25%;
+}
+
+.pic4{
+    grid-row-start: 5;
+    grid-row-end: 5 ;
+    grid-column-start: 5 ;
+    grid-column-end: 8 ;
+    border-radius: 25%;
+}
+
+.pic5{
+    grid-row-start: 7 ;
+    grid-row-end: 7 ;
+    grid-column-start: 1 ;
+    grid-column-end: 3 ;
+    padding-left: 10%;
+    border-radius: 25%;
+}
+
+.pic6{
+    grid-row-start: 7 ;
+    grid-row-end: 7 ;
+    grid-column-start: 5 ;
+    grid-column-end: 8 ;
+    border-radius: 25%;
+
+}
+/*-some mild css for all my assignments on one page--*/
+.pic1,
+ .pic2,
+  .pic3,
+   .pic4,
+    .pic5,
+     .pic6{
+    border: 1px solid #000000;
+    width: 11.250em;
+    length: 4.375em;
+}
+
+.text{
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align:center;
+    font-size: 1.25em;
+    padding-top: 18%;
+}
+
+.repo{
+    color: white;
+    padding-left: 7%;
+    padding-top: 10%;
+}
+
+a{
+    color: white;
+ 
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+.next1{
+    padding-left: 35%;
+    padding-bottom: 50%;
+    color: white;
+}
+
+.text2{
+    padding-top: 10%;
+    
+    color: white;
+    font-size: 0.50em;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+.next2{
+    padding-top: 10% ;
+    padding-left: 45%;
+    color: white;
+    margin-top: 15%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+.next3{
+
+    padding-left: 45%;
+    color: white;
+    padding-bottom: 50%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+
+}
+/*--adjusting the goku pic-*/
+.goku{
+    width: 30vh;
+    padding-left: 15%;
+    padding-top: 10%;
+    border-radius: 25%;
+}
+
+.next4{
+    color: white;
+    padding-left: 45%;
+}
+
+.next5{
+    color: white;
+    padding-left: 45%;
+    padding-bottom: 50%;
+}
+
+.services{
+    font-size: 0.75em;
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+/*-this container holds all of my services --*/
+.container1{
+    display: grid;
+    grid-template-columns:5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    grid-gap: 1vh;
+}
+
+.violin{
+    grid-row-start: 2 ;
+    grid-row-end: 2 ;
+    grid-column-start: 2 ;
+    grid-column-end: 2 ;
+    border-radius: 15%;
+}
+
+.skeet{
+    grid-row-start: 2 ;
+    grid-row-end: 2 ;
+    grid-column-start: 5 ;
+    grid-column-end: 5 ;
+    border-radius: 15%;
+}
+.food{
+    grid-row-start: 6 ;
+    grid-row-end: 6 ;
+    grid-column-start: 2 ;
+    grid-column-end: 2 ;
+    border-radius: 15%;
+}
+
+.coding{
+    grid-row-start: 6 ;
+    grid-row-end:6 ;
+    grid-column-start: 5 ;
+    grid-column-end: 5 ;
+    border-radius: 15%;
+}
+
+.skeettext{
+    color: white;
+    text-align: center;
+    font-size: 0.55em;
+ 
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 7;
+    grid-column-start: 5;
+}
+
+.foodtext{
+    color: white;
+    text-align: center;
+
+    grid-row-start: 7;
+    grid-row-end: 7;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    width: 8em;
+    font-size: 1.75em;
+    padding-top: 35%;
+    margin-right: 30%;
+    }
+
+.codingtext{
+    color: white;
+
+    text-align: center;
+    width: 10em;
+    grid-row-start: 7;
+    grid-row-end: 7;
+    grid-column-end: 5;
+    grid-column-start: 5;
+    font-size: 1.75em;
+}
+
+.violintext{
+    color: white;
+
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    grid-column-start: 3;
+    text-align: center;
+    padding-top: 12%;
+    font-size: 1.50em;
+    width: 10em;
+    padding-top: 40%;
+}
+
+.back{
+    padding-left: 45%;
+    padding-bottom: 50%;
+}
+
+.contacttitle{
+    color: white;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    padding-top: 30%;
+    font-size: 3em;
+}
+
+.email{
+    color: white;
+    text-align: center;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-end: 5;
+    grid-column-start: 5;
+    padding-top: 40%;
+}
+
+.instagram{
+    color: white;
+    grid-row-start: 6;
+    grid-row-end: 6;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    padding-top: 40%;
+    text-align: center;
+}
+
+.number{
+    color: white;
+    
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 5;
+    grid-column-start: 5;
+    padding-top: 40%;
+    text-align: center;
+}
+
+.github{
+    color: white;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    padding-top: 40%;
+    text-align: center;
+}
+
+.githubicon{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    grid-column-start: 2;
+}
+
+.phonenumber{
+
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 5;
+    grid-column-start: 5;
+}
+
+.insta{
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-end: 2;
+    grid-column-start: 2;
+}
+
+.gmail{
+
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-end: 5;
+    grid-column-start: 5;
+}
+/*--the final grid-*/
+.container2{
+    display: grid;
+    /*--setting 7 columns of 5vh-*/
+    grid-template-columns:5vh 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
+    /*--Set the rows to have 12 rows for reuseability in other scripts-*/
+    grid-template-rows: 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh 8vh;
+    grid-gap: 1vh;
+}
+
+
+
+
+/* The bigger viewport-------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+    
+.title{
+    font-size: 3em;
+   padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.text{
+    padding: 5% 5% 5% 5%;
+ 
+}
+
+
+a{
+    text-align: center;
+    padding-left: 35%;
+    margin-bottom: 20%;
+}
+/*--this is the container putting all these pictures in a grid-*/
+.container{
+    display: grid;
+    grid-template-columns:50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 40vh 40vh 40vh 40vh ;
+    grid-gap: 1vh;
+}
+/*-all my projects in one grid--*/
+.pic1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    width: 50vh;
+
+}
+
+.pic2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    width: 50vh;
+
+}
+.pic3{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    width: 50vh;
+
+}
+.pic4{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    width: 50vh;
+
+}
+.pic5{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    width: 50vh;
+
+}
+.pic6{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    grid-column-start:4;
+    width: 50vh;
+}
+.texts1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    padding-top: 60%;
+    padding-left: 45%;
+    font-size: 1.25em;
+    width: 15vh;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+
+}
+.texts2{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    padding-top: 60%;
+    padding-right: 95%;
+    font-size: 1.25em;
+    width: 15v;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+/* this one above will not move the right way at all so its as close as it going to get*/
+
+.texts3{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    padding-top: 60%;
+    padding-left: 45%;
+    font-size: 1.25em;
+    width: 15v;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+.texts4{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    padding-top: 60%;
+    padding-left: 45%;
+    font-size: 1.25em;
+    width: 15v;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+.texts5{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    padding-top: 60%;
+    padding-left: 45%;
+    font-size: 1.25em;
+    width: 15v;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+.texts6{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    grid-column-start:4;
+    padding-top: 60%;
+    padding-left: 45%;
+    font-size: 1.25em;
+    width: 15v;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+.next1{
+    padding-right: 35%;
+}
+/*-re sizing the image of goku above my about paragraph--*/
+.goku{
+    width: 75vh;
+    padding-left: 36%;
+    border-radius: 30%;
+}
+.text2{
+    max-width: 100vh;
+    padding-left: 32%;
+    font-size: 1.25em;
+    padding-bottom: 15%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+/*--this is the container holding my services in a grid-*/
+.container1{
+    display: grid;
+    grid-template-columns:50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 40vh 40vh 40vh 40vh ;
+    grid-gap: 1vh;
+
+}
+
+.violin{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start:2;
+}
+.violintext{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    padding-top: 70%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+.skeet{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-column-start: 4;
+
+}
+.skeettext{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    padding-top: 60%;
+    font-size: 1em;
+    width: 35vh;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+.food{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    grid-column-start: 2;
+}
+.foodtext{
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 2;
+    grid-column-start: 2;
+    font-size: 1em;
+    padding-top: 65%;
+
+    width: 30vh;
+}
+/*--this is the coding picture with the text below it being placed-*/
+.coding{
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 4;
+    grid-column-start: 4;
+}
+.codingtext{
+    padding-top: 60%;
+    font-size: 1em;
+    width: 35vh;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-end: 4;
+    grid-column-start: 4;
+}
+/*-the next and back button--*/
+.next4{
+    padding-top: 25%;
+    padding-right: 45%;
+}
+.next5{
+    padding-right: 45%;
+}
+/*-removing all the titles padding (there was alot)--*/
+.contacttitle{
+padding: 0 0 0 0;
+}
+/*--the container holding all of my images in grid-*/
+.container2{
+    display: grid;
+    grid-template-columns:50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 40vh 40vh 40vh 40vh ;
+    grid-gap: 1vh;
+}
+/*--github png-*/
+.githubicon{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start: 2;
+}
+/*--git hub repository for all my work-*/
+.github{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start: 2; 
+    padding-top: 70%;
+    padding-right: 35%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+/*-pic of the phone --*/
+.phonenumber{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-column-start: 4;
+}
+/*--my actual phone number-*/
+.number{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    padding-top: 65%;
+    padding-right: 35%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+
+/*-my insta logo--*/
+.insta{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    grid-column-start: 4;
+
+}
+/*--my placing of the instagram handle-*/
+.instagram{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    grid-column-start: 4;
+    padding-top: 65%;
+    padding-right: 40%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+/*--my google logo-*/
+.gmail{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    grid-column-start: 2; 
+}
+/*-this is the writing below the google logo with my email--*/
+.email{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-end: 2;
+    grid-column-start: 2; 
+    padding-top: 70%;
+    padding-right: 35%;
+    font-family: 'Changa One', cursive;
+    font-family: 'Comfortaa', cursive;
+}
+/*--this is to select the final back button-*/
+.back{
+    padding-right: 45%;
+}
+
+}
+/* This is for reduced animation*/
+
+@media (prefers-reduced-motion: reduce) {
+    body { background-image:url('black.jpg'); background-repeat:repeat; }}
+
+
+    /*also I did this all with the inspect element open and 
+once i closed it when i finished my assignment it showed 
+different results please keep that in mind. 
+( i didn't have enough time to fix my blunder sorry)*/
